@@ -1,0 +1,21 @@
+# --- .gitignore ---
+
+# Carpetas temporales de la API
+uploads/
+outputs/
+
+# Archivos de entorno virtual de Python
+venv/
+__pycache__/
+*.pyc
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Archivos de log
+*.log
