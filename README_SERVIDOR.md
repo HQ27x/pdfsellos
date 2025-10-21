@@ -220,3 +220,4 @@ curl -X POST https://tu-api.onrender.com/sellar_pdf \
 ---
 
 **¡Tu API está lista para procesar PDFs! 🎉**
+
