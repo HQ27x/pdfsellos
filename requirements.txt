@@ -1,4 +1,4 @@
 # --- requirements.txt ---
-Flask
-PyMuPDF
-gunicorn
+Flask==2.3.3
+PyMuPDF==1.22.5
+gunicorn==21.2.0

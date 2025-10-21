@@ -136,12 +136,14 @@ def handle_sellado():
             print(f"❌ {error_msg}")
             return jsonify({"error": error_msg}), 500
 
-        return send_file(
+        # Enviar el archivo como adjunto con el tipo MIME correcto
+        response = send_file(
             output_path, 
             as_attachment=True,
-            download_name=f"sellado_{pdf_file.filename}",
-            as_attachment_kwargs={"mimetype": "application/pdf"}
+            download_name=f"sellado_{pdf_file.filename}"
         )
+        response.headers['Content-Type'] = 'application/pdf'
+        return response
 
     except Exception as e:
         error_msg = f"Error inesperado: {str(e)}"
